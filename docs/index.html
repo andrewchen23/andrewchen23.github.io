@@ -5,10 +5,85 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <style>
+    
+    body{
+      background-color: black;
+      display: flex;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      justify-content: center;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 640px;
+      border: thin red solid;
+      flex-grow: 1;
+    }
+
+    .banner {
+      display: flex;
+      justify-content: center;
+    }
+
+    .small-icons {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .small-icons-image{
+      width: 18px;
+      height: 18px;
+      object-fit: cover;
+    }
+
+    .banner-image {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border-radius: 128px;
+      border: 1px white solid; 
+    }
+
+    .name {
+      display: flex;
+      justify-content: center;
+      color:white;
+    }
+  </style> 
 </head>
 
 <body>
-  <h1><a href="/weenie">WEENIE</a></h1>
+  
+  <div class="items">
+
+    <!-- profile pic -->
+    <div class="banner">
+      <img src="/profile_pic.jpg" class="banner-image">
+    </div>
+
+    <!-- name -->
+    <div class="name">
+      <h1>Andrew Chen</h1>
+    </div>
+
+    <!-- small icon -->
+    <div class="small-icons">
+      <a href="https://www.instagram.com/an.drewchen/" target="_blank"> <img class ="small-icons-image" src="/Instagram_logo.jpg"></a>
+      <a href="https://www.linkedin.com/in/andrew-chen-64078419b/">LinkedIn</a>
+      <a href="https://github.com/andrewchen23">Github</a>
+    </div> 
+
+
+
+  </div>
+  
+
+
 </body>
 
 </html>
